@@ -1,0 +1,14 @@
+{
+  "name": "nodemonusage",
+  "version": "1.0.0",
+  "description": "Testing the usage of nodemon",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Kabeer Nasir",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
