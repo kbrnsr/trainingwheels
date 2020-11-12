@@ -3,6 +3,12 @@ const express = require('express');
 const app = express();
 const port = 8080;
 
+// express middleware
+app.use((req, red, next) => {
+  console.log('expressvpnusage', 'Will hang at this point, unless third param is called');
+  next();
+});
+
 // get, post, put, delete methods
 app.get('/', (req, res) => {
   res.send('<h1>Awesome website</h1>');
